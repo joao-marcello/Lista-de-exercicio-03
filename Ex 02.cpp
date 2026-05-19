@@ -3,27 +3,18 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	
-	int x, y;
-	
-	cout << "Digite um valor qualquer";
-	cin >> x;
-	
-	cout << "Digite outro valor";
-	cin >> y;
-	 
-	 while (y<x)
-	 {
-	 	cout << "O segundo valor devera ser maior que o primeiro" << endl;
+    int a, b;
+    cout << "Digite o primeiro valor: ";
+    cin >> a;
+    
+    do {
+        cout << "Digite o segundo valor (deve ser maior que " << a << "): ";
+        cin >> b;
+        
+    } while (b <= a);
+    cout << "Valores aceitos: " << a << " e " << b << endl;
 
-	 	cout << "Digite novamente o segundo valor";
-	 	
-	 	cin >> y;
-	 	
-	 }
-	 
-	 cout << "Condicao valida";
-	 
-	 
+	
+	
 	return 0;
 }
